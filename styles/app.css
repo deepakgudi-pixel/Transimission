@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Office&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #b9b9b9;
+  color: #000000;
+  font-family: "Ysabeau Office", sans-serif;
+}
+
+
+.left-top{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.left-top, .left-bottom, .right-bottom {
+    position: fixed;
+    margin: 20px;
+    z-index: 1;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .left-top {
+    left: 0;
+    top: 0;
+  }
+  
+  .right-top {
+    right: 0;
+    top: 0;
+  }
+  
+  .left-bottom {
+    left: 0;
+    bottom: 0;
+  }
+  
+  .right-bottom {
+    right: 0;
+    bottom: 0;
+  }
+
+.slider-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 0;
+}
+
+.slider {
+  margin-left: 25vw;
+}
+
+.slide {
+  position: relative;
+  display: inline-block;
+  width: 50vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.slide-img {
+  position: absolute;
+  max-height: 70%;
+  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slide-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  margin-top: -1em;
+  font-size: 5vw;
+  text-transform: uppercase;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
